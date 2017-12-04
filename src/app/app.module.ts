@@ -26,7 +26,7 @@ export const environment = {
   ],
   imports: [
     BrowserModule,
-   AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     FormsModule,
     ReactiveFormsModule
