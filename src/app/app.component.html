@@ -1,3 +1,77 @@
-<input type="text" [(ngModel)]="name" placeholder="name">
-<input type="text" [(ngModel)]="lname" placeholder="lname">
+<!--<input type="text" [(ngModel)]="name" placeholder="name" >
+<input type="text" [(ngModel)]="lname" placeholder="lname" >
+-->
+
+
+
+<div>
+
+<h3>add Products</h3>
+<input type="text" [(ngModel)]="productName" placeholder="name" >
+<input type="text" [(ngModel)]="specificName" placeholder="specificName" >
+<input type="text" [(ngModel)]="code" placeholder="code" >
+<input type="text" [(ngModel)]="marketer" placeholder="marketer" >
+<input type="text" [(ngModel)]="price" placeholder="price" >
+
+<button (click)="addProducts()">add</button>
+
+</div>
+
+<div>
+<h3>add Treatment</h3>
+<input type="text" [(ngModel)]="TreatmentType" placeholder="TreatmentType" >
+<input type="text" [(ngModel)]="treatmentName" placeholder="name" >
+<input type="text" [(ngModel)]="treatmentCode" placeholder="code" >
+<button (click)="addTreatment()">add</button>
+</div>
+
+<div>
+<h3>add location</h3>
+<input type="text" [(ngModel)]="city" placeholder="city" >
+<input type="text" [(ngModel)]="address" placeholder="address" >
+<input type="text" [(ngModel)]="phone" placeholder="phone" >
+<button (click)="addLocation()">add</button>
+</div>
+
+<div>
+        <h3>add user</h3>
+        <input type="text" [(ngModel)]="userId" placeholder="id" >
+        <input type="text" [(ngModel)]="userFirstName" placeholder="firstName" >
+        <input type="text" [(ngModel)]="userLastName" placeholder="lastName" >
+        <input type="text" [(ngModel)]="userPhone" placeholder="phone" >
+        <button (click)="addUser()">add</button>
+</div>
+
+<div>
+        <h3>add cosmetician</h3>
+        <input type="text" [(ngModel)]="cosmeticianId" placeholder="id" >
+        <input type="text" [(ngModel)]="cosmeticianFirstName" placeholder="firstName" >
+        <input type="text" [(ngModel)]="cosmeticianLastName" placeholder="lastName" >
+        <input type="text" [(ngModel)]="cosmeticianPhone" placeholder="phone" >
+        <button (click)="addCosmetician()">add</button>
+</div>
+
+<div>
+        <h3>add manager</h3>
+        <input type="text" [(ngModel)]="managerId" placeholder="id" >
+        <input type="text" [(ngModel)]="managerFirstName" placeholder="firstName" >
+        <input type="text" [(ngModel)]="managerLastName" placeholder="lastName" >
+        <input type="text" [(ngModel)]="managerPhone" placeholder="phone" >
+        <button (click)="addManager()">add</button>
+</div>
+
+
+<!--
 <button (click)="send()">send</button>
+<button (click)="delete()">delete</button>
+
+<div *ngFor="let u of users">
+    {{u.name}} {{u.lname}}
+
+</div>
+
+<div *ngFor="let u of ob | async">
+       <b> {{u.name}} {{u.lname}}</b>
+    
+</div>
+-->
